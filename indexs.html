@@ -1,0 +1,110 @@
+from IPython.display import HTML
+
+html_form = """
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NovaCorp Smartwatch - Encuesta</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(to right, #141e30, #243b55);
+            color: #fff;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 600px;
+            margin: 30px auto;
+            background: rgba(0,0,0,0.5);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.3);
+        }
+        h1 {
+            text-align: center;
+            color: #00d2ff;
+        }
+        label {
+            display: block;
+            margin: 15px 0 5px;
+        }
+        input[type="radio"] {
+            margin-right: 10px;
+        }
+        .submit-btn {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background: #00d2ff;
+            color: #000;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+        .submit-btn:hover {
+            background: #3a7bd5;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>NovaCorp Smartwatch</h1>
+        <form>
+            <label>1️⃣ ¿Te gustaría conocer la ubicación exacta de tus hijos o familiares en tiempo real?</label>
+            <input type="radio" name="q1">Sí
+            <input type="radio" name="q1">No
+
+            <label>2️⃣ ¿Te sentirías más seguro con un reloj que envía alertas de salud en tiempo real?</label>
+            <input type="radio" name="q2">Sí
+            <input type="radio" name="q2">No
+
+            <label>3️⃣ ¿Consideras que la tecnología puede prevenir emergencias en tu familia?</label>
+            <input type="radio" name="q3">Sí
+            <input type="radio" name="q3">No
+
+            <label>4️⃣ ¿Estarías interesado en un Smartwatch que mide ritmo cardíaco y presión arterial?</label>
+            <input type="radio" name="q4">Sí
+            <input type="radio" name="q4">No
+
+            <label>5️⃣ ¿Preferirías recibir notificaciones automáticas ante emergencias en tu celular?</label>
+            <input type="radio" name="q5">Sí
+            <input type="radio" name="q5">No
+
+            <label>6️⃣ ¿Te interesaría que el reloj también detecte caídas o accidentes automáticamente?</label>
+            <input type="radio" name="q6">Sí
+            <input type="radio" name="q6">No
+
+            <label>7️⃣ ¿Consideras que este producto es una inversión en seguridad y salud?</label>
+            <input type="radio" name="q7">Sí
+            <input type="radio" name="q7">No
+
+            <label>8️⃣ ¿Recomendarías este Smartwatch a familiares o amigos?</label>
+            <input type="radio" name="q8">Sí
+            <input type="radio" name="q8">No
+
+            <label>9️⃣ ¿Qué tan importante es la seguridad para ti?</label>
+            <input type="radio" name="q9">Muy importante
+            <input type="radio" name="q9">Poco importante
+
+            <label>🔟 ¿Comprarías un producto que combine salud y ubicación en un solo dispositivo?</label>
+            <input type="radio" name="q10">Sí
+            <input type="radio" name="q10">No
+
+            <label>1️⃣1️⃣ ¿Te gustaría recibir información sobre ofertas o nuevos productos de NovaCorp?</label>
+            <input type="radio" name="q11">Sí
+            <input type="radio" name="q11">No
+
+            <button class="submit-btn" type="submit">Enviar respuestas</button>
+        </form>
+    </div>
+</body>
+</html>
+"""
+
+HTML(html_form)
